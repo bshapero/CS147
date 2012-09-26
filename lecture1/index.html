@@ -6,7 +6,7 @@
 	
 	<style type="text/css">
 		body {
-			background:#003399;
+			background:#ffffff;
 			font-family:Helvetica, Arial, sans-serif;
 		}
 		h2, h3 {
@@ -14,6 +14,26 @@
 			font-weight:300;
 			color:#aaa;
 			border:1px solid #aaa;
+		}
+		#assignments {
+			background:#eeeeee;
+		}
+		.newheader {
+			color:#000;
+		}
+		.opacity {
+			opacity:0.4;
+		}
+		.button {
+				background:#333;
+			width:100px;
+			color:#fff;
+			height:20px;
+			-moz-border-radius: 10px;
+			-khtml-border-radius: 10px;
+			-webkit-border-radius:10px;
+			border-radius: 0px;
+			text-align:center;
 		}
 	</style>
 	
@@ -27,13 +47,15 @@
 			<li>Learn HTML</li>
 		</ul>
 	
-		<h3>A nice button</h3>
+		<h3 id='assignments'>A nice button</h3>
+		<div class="button">Click me</div>
+		<h3 class="newheader">An invisible seal</h3>
 
-		<h3>An invisible seal</h3>
-
-		<h3>A video</h3>
-
+		<h3 id='assignments'>A video</h3>
+		<video width="300" height="240" controls="controls">
+		  <source src="gizmo.mp4" type="video/mp4" />
+		</video>
 		<h3>Two boxes side by side</h3>
-
+		<p><img width="50" class="opacity" src="seal.png" /></p>
 	</body>
 </html>
